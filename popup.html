@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>linkedin to sheet</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="airtable.js"></script>
+  <script src="popup.js"></script>
+  <script src="test.js"></script>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body id="body">
+  <div 
+  
+  style="position: relative; width: 400px; 
+  height: 420px; border: 10px;">
+    <h3 class="notes-title">Notes</h3>
+    <input placeholder="Enter notes" class="notes" type="text" id="notes">
+    <div class="box">
+      <div class="left">
+        <h3 class="score-title">Fit Score</h3>
+        <input placeholder="1-10" class="fitscore" type="number" id="fitscore">
+      </div>
+      <div class="indb">
+        <font size="5" id="indb">In database: </font></div>
+    </div>
+    
+    <h3 class="difscore-title">Difficult Score</h3>
+    <input placeholder="1-10" class="difscore" type="number" id="difscore">
+    
+    <h3 class="email-title">Email</h3>
+    <input placeholder="example@example.com" class="email" type="text" id="email">
+    
+    <h3 class="email-title">Other Links</h3>
+    <input placeholder="https://link.com" class="notes" type="text" id="otherlinks">
+    
+    <h3 class="email-title">Speaker</h3>
+    <label class="switch">
+      <input type="checkbox" id="speaker">
+      <span class="slider round"></span>
+    </label>
+  </input>
+  <br>
+    <!-- <h3 class="email-title">Content Writer</h3>
+    <label class="switch">
+      <input type="checkbox" id="content-writer">
+      <span class="slider round"></span>
+    </label>
+  </input> -->
+  <br>
+  <select id="hunter" style="width: 200;" class="hunter-select">
+    <option value="">None</option>
+    <option value="hadar">Hadar</option>
+    <option value="medulla">Medulla</option>
+    <option value="hrmarket">HR Market</option>
+    <option value="seev">seeV</option>
+    <option value="gotfriends">gotFriends</option>
+  </select>
+  <br>
+    <h3 class="email-title">Locate In Israel</h3>
+    <label class="switch">
+      <input type="checkbox" id="locateinisrael" checked>
+      <span class="slider round"></span>
+    </label>
+  </input>
+
+    <br><br>
+    <button
+      
+      id="scanpage", class="scanpage">Add</button>
+      <div id="html" style="display: none"></div>
+  </div>
+  &nbsp &nbsp &nbsp&nbsp&nbsp
+  <button
+      
+  id="cancel", class="cancel" onclick="disableBody()">Cancel</button>
+  <div id="canceldiv"></div>
+</div>
+
+</body>
+
+</html>
+
+<!-- class="wrapper"  -->
