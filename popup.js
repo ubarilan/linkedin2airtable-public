@@ -24,7 +24,7 @@ String.prototype.replaceAll = function(search, replacement) { // Creating a func
 String.prototype.replace = function(search, replacement) { // Changing the replace function with a one which replaces all the 'search' items with the 'replacement' items
     var target = this;
     return target.split(search).join(replacement);
-};
+};h
 function consoleOnCurrentTab (text) { // A function which console.log()s on the current tab
     console.log(text)
 }
@@ -236,8 +236,7 @@ base(TableName).create({ // Creating a new record in the table
           "Speaker":document.getElementById("speaker").checked,
        //   "Content-Writer":document.getElementById("content-writer").checked,
           "Locate-In-Israel": document.getElementById("locateinisrael").checked,
-          "Other-Links": otherlinks,
-          "Hunter": document.getElementById("hunter").value
+          "Other-Links": otherlinks
         }, function(err, record) {
           if (err) {
             console.error(err);
